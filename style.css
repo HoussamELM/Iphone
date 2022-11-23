@@ -4,8 +4,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 a,
 button,
@@ -65,10 +67,10 @@ nav,a{
   padding-bottom: 10rem;
 }
 .first-page-title{
- font-size: 2rem; 
+ font-size: 1.5rem; 
 }
 .first-page-subtitle{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .intro-video{
@@ -96,7 +98,7 @@ nav,a{
 .second-text{
   padding: 5% 30%;
   position: relative;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   z-index: 2;
 }
