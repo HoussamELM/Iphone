@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 a,
 button,
@@ -19,7 +23,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 0 20%;
-  min-height: 10vh;
+  min-height: 8vh;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   z-index: 10;
@@ -75,3 +79,71 @@ nav,a{
 /*2nd PAGE*/
 
 
+.second-page{
+  min-height: 125vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.smoke-video{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
+.second-text{
+  padding: 5% 30%;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/*3rd PAGE*/
+
+.third-page{
+  position: relative;
+  padding: 0% 20%;
+}
+.product-text-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+.phone-size{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pro-size{
+  text-align: right;
+}
+.max-size{
+  text-align: left;
+}
+.product-images{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.large-phone{
+  position: relative;
+  transform: translateX(40%);
+}
+.small-phone{
+  position: relative;
+  transform: translateX(-40%);
+  z-index: 2;
+}
+.retina-line{
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translate(-50%,-17%);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
