@@ -252,6 +252,7 @@ color: rgb(194, 194, 194);
   justify-content: space-between;
   position: relative;
   display: flex;
+  background: white;
 }
 .portrait {
   height: 70vh;
