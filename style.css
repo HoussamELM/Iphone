@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-
-body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+body{
+  overflow-x: hidden;
 }
+
 a,
 button,
 h1,
@@ -75,6 +76,7 @@ nav,a{
 
 .intro-video{
   position: absolute;
+  width: 100%;
 }
 
 /*2nd PAGE*/
@@ -111,7 +113,7 @@ nav,a{
 }
 .product-text-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
 }
@@ -142,9 +144,9 @@ nav,a{
 }
 .retina-line{
   position: absolute;
-  bottom: 17%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%,-17%);
+  transform: translate(-50%,-100%);
   font-size: 0.8rem;
   font-weight: bold;
 }
