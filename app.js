@@ -9,7 +9,6 @@ const tlIntro = gsap.timeline({
     }
 })
 
-tlIntro.fromTo('nav',{opacity:1},{opacity:0})
 
 const  tlH = gsap.timeline({
     scrollTrigger:{
@@ -115,3 +114,16 @@ tlVideo.fromTo('.product-video', {currentTime: 0}, {currentTime: 3});
 tlVideo.fromTo('.product-info-container h3', {opacity: 0}, {opacity: 1, stagger: 0.25},'<');
 
 // p-6
+
+const tlParallax = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".sixth-page",
+      start: "-25%",
+      end: "50%",
+      scrub: true,
+    },
+  });
+  
+  tlParallax.fromTo(".photo-description", { y: 0 }, { y: 180 });
+  tlParallax.fromTo(".portrait-container", { y: 0 }, { y: 180 }, "<");
+  tlParallax.fromTo(".phone-video", { y: 0 }, { y: 300 }, "<");

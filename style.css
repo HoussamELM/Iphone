@@ -8,6 +8,7 @@
 
 body{
   overflow-x: hidden;
+  background-color: #eeeeee;
 }
 
 a,
@@ -46,7 +47,7 @@ nav,a{
 .buy-button{
   padding: 0.2rem 2rem;
   background: #3056F5;
-  color: white;
+  color: #eeeeee;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -164,7 +165,7 @@ nav,a{
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  background: white;
+  background-color: rgb(255, 255, 255);
   flex: 1;
 }
 .phone-gallery {
@@ -225,7 +226,7 @@ nav,a{
 .product-info-container{
   position: relative;
   z-index: 2;
-  color: white;
+  color: #eeeeee;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -248,11 +249,11 @@ color: rgb(194, 194, 194);
 
 .sixth-page {
   min-height: 100vh;
-  padding: 10% 20%;
+  padding: 10% 20% 0;
   justify-content: space-between;
   position: relative;
   display: flex;
-  background: white;
+  background: #eeeeee;
 }
 .portrait {
   height: 70vh;
